@@ -1,0 +1,554 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+	<meta name="description" content="The interactive site about the animals, birds and plant world">
+    <meta name="keywords" content="animation, design, creative effects, nature">
+    <meta name="author" content="Lysenko Irina">
+	<title>Interactive Reserve</title>
+	<link rel="icon" href="green-bird.ico"/>
+	<link href="birds.css" rel="stylesheet">
+	<link href="gallery.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="150">
+
+   
+	<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top" id="navbar">
+	  <a class="navbar-brand" href="#"><img src="pictures/green-bird.png" width="60"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		<div class="navbar-nav">
+		  <a class="nav-item nav-link active" href="#start">Home <span class="sr-only">(current)</span></a>
+		  <a class="nav-item nav-link" href="#myTab">Information </a>
+		  <a class="nav-item nav-link" href="#about">About </a>
+		</div>
+	  </div>
+	  <form class="form-inline">
+		  <div class="form-group mb-2">
+			<input class="form-control" type="email" placeholder="Email">
+		  </div>
+		  <div class="form-group mx-sm-3 mb-2">
+			<input class="form-control" type="password" placeholder="Password">
+		  </div>
+		  <button type="submit" class="btn btn-success mb-2">Log In</button>
+	  </form>
+	</nav>	
+	
+	
+	<div class="jumbotron" id="start">
+		  
+	  <svg version="1.0" xmlns="http://www.w3.org/2000/svg"  width="980pt" height="120pt" viewBox="0 300 980 320"
+			preserveAspectRatio="xMidYMid meet" class="bird"> 
+			
+		<g transform="translate(320,640) scale(0.05,-0.05)" fill="url(#lineargrad)" stroke="none">
+			<path id="right" d=""/>
+		</g>  
+		<g transform="translate(0,640) scale(0.05,-0.05)" fill="url(#lineargrad)" stroke="none" id="trace">
+			<path id="left" d=""/>
+		</g>
+	  
+	   	<linearGradient id="lineargrad">  
+    		 <stop stop-color="#fff8e1" offset="0%"/> 
+			 <stop stop-color="#fafafa" offset="40%"/> 			 
+   			 <stop stop-color="#f9fbe7" offset="50%"/> 
+			 <stop stop-color="#faf0e6" offset="75%"/>
+			 <stop stop-color="#fdf5e6" offset="90%"/> 			 
+			 <stop stop-color="cornsilk" offset="95%"/>
+		</linearGradient>
+
+	  </svg> 
+	
+	  <h1 class="display-4">Interactive reserve </h1>
+	  <p class="lead">This is a site with the wonderful photos</p>
+	  <hr class="my-4">
+	  <p>Want to know more? Join our mailing list!</p>
+	  <div class="input-group mb-3">
+		  <div class="input-group-prepend">
+			<span class="input-group-text" id="basic-addon1">@</span>
+		  </div>
+		  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+		  <a class="btn btn-primary" href="#" role="button">Sign Up</a>
+	  </div>
+	  
+	  <div class="bird-container bird-container--one">
+		  <div class="birds bird--one"></div>
+	  </div>
+		
+	  <div class="bird-container bird-container--two">
+		  <div class="birds bird--two"></div>
+	  </div>
+		
+	  <div class="bird-container bird-container--three">
+		  <div class="birds bird--three"></div>
+	  </div>
+		
+	  <div class="bird-container bird-container--four">
+		  <div class="birds bird--four"></div>
+	  </div>
+	  
+	</div> 
+	
+	
+	<ul class="nav nav-tabs" id="myTab" role="tablist">
+	  <li class="nav-item" role="presentation">
+		<button class="nav-link" id="flora-tab" data-bs-toggle="tab" data-bs-target="#flora" type="button" role="tab" aria-controls="flora" aria-selected="false">
+		<img src="pictures/tree.png" height="35px"> Flora</button>
+	  </li>
+	  <li class="nav-item" role="presentation">
+		<button class="nav-link active" id="animals-tab" data-bs-toggle="tab" data-bs-target="#animals" type="button" role="tab" aria-controls="animals" aria-selected="true">
+		<img src="pictures/ejik.png" height="35px"> Animals</button>
+	  </li>
+	  <li class="nav-item" role="presentation">
+		<button class="nav-link" id="birds-tab" data-bs-toggle="tab" data-bs-target="#birds" type="button" role="tab" aria-controls="birds" aria-selected="false">
+		<img src="pictures/bird.png" height="35px"> Birds</button>
+	  </li>
+	</ul>
+	
+	<div class="tab-content" id="myTabContent">
+	  <div class="tab-pane fade show active" id="animals" role="tabpanel" aria-labelledby="animals-tab">
+		
+	  <div class="card-deck" id="animals">
+	  <div class="card effect__click">
+		<div class="card__front">
+			<img class="card-img-top" src="pictures/Lynx.jpg" alt="Card image cap">
+			<div class="card-body">
+			  <h5 class="card-title">Guard lynx</h5>
+			  <p class="card-text">
+				  Lynxes are a genus of predatory mammals of the feline family, the closest to the genus of cats (Felis). It includes several types of medium-sized cats.
+				<br>
+				  The lynx is a typical cat, although it is the size of a large dog, which it partly resembles with its shortened body and long legs. The lynx's head is very characteristic: relatively small, rounded and very expressive. The height of the ordinary lynx reaches up to 55 cm, the Canadian &ndash; from 48 cm to 56 cm, and the Pyrenean &ndash; from 60 to 70 cm. 
+				  Lynxes differ from other cats by their short tail and tassels at the ends of their ears. The body weight of a lynx is from 5 to 30 kg.
+				<br>
+				  In the Scandinavian tradition, the lynx was the sacred animal of the goddess Freya. It was believed that lynxes were harnessed to her chariot. The ancient Greeks believed that the lynx's sharp gaze could pierce through opaque objects.
+			  </p>
+			</div>
+			<div class="card-footer">
+				<audio controls>
+					<source src="audio/ryis.mp3" type="audio/mpeg">
+					Тег audio не поддерживается вашим браузером. 			
+				</audio>
+				<small class="text-muted">Lynx</small>
+			</div>
+		</div>
+		<div class="card__back">
+			<img class="card-img-top" src="pictures/Lynx.jpg" alt="Card image cap">
+			<div class="card-body">
+			  <h5 class="card-title">Рысь</h5>
+			  <p class="card-text">
+				  Рыси — род хищных млекопитающих семейства кошачьих, наиболее близкий к роду кошек. К нему относятся несколько видов кошек средних размеров.
+				<br>
+				  Рысь — типичная кошка, хотя величиной с крупную собаку, которую отчасти напоминает своим укороченным телом и длинноногостью. Очень характерна голова рыси: сравнительно небольшая, округлая и очень выразительная. Рост обычной рыси достигает до 55 см, канадской &ndash; от 48 см до 56 см, а пиренейской &ndash; от 60 до 70 см. 
+				  От других кошачьих рыси отличаются коротким хвостом и кисточками на концах ушей. Масса тела рыси от 5 до 30 кг.
+				<br>
+				  В скандинавской традиции рысь была священным животным богини Фрейи. Считалось, что рыси впряжены в её колесницу. Древние греки верили, что острый взор рыси способен пронзать насквозь непрозрачные предметы.
+			  </p>
+			</div>
+			<div class="card-footer">
+				<audio controls>
+					<source src="audio/ryis.mp3" type="audio/mpeg">
+					Тег audio не поддерживается вашим браузером. 			
+				</audio>
+				<small class="text-muted">Рысь</small>
+			</div>
+		</div>
+	  </div>
+	  
+	  <div class="card effect__click">
+		<div class="card__front">
+			<img class="card-img-top" src="pictures/Deer.jpg" alt="Card image cap">
+			<div class="card-body">
+			  <h5 class="card-title"><br>Noble deer</h5>
+			  <p class="card-text">
+				  A red deer or a real deer is a cloven-hoofed mammal from the deer family. The red deer inhabits most of Europe, the Caucasus, Asia Minor, Iran, and parts of Western and Central Asia.
+				  It also inhabits the Atlas Mountains in Morocco and Tunisia, being the only species of deer to inhabit Africa. Red deer have been introduced to other areas, including Australia, New Zealand, the United States, Canada, Peru, Uruguay, Chile and Argentina.
+				<br>
+				  The red deer combines up to 28 subspecies, whose representatives differ from each other in size, weight, color and some other characteristics. Caucasian deer, European deer, maral, Crimean deer, Bukhara or Tugai deer, wapiti, raisin — all of them are subspecies of this animal. 
+				  This can be easily determined by such parameters as the animal's coat, which in summer does not have a spotted color, and the white spot under the tail is large and rises above the beginning of the tail. The red deer has horns with a large number of appendages (as a rule, there are at least five of them), which form a kind of recognizable crown at the top of the horn.
+			<br><br>
+			</div>
+			<div class="card-footer">
+			  <audio controls>
+				<source src="audio/deer.mp3" type="audio/mpeg">
+				Тег audio не поддерживается вашим браузером. 			
+			  </audio>
+			  <small class="text-muted">Deer</small>
+			  <audio controls>
+				<source src="audio/olenenok.mp3" type="audio/mpeg">
+				Тег audio не поддерживается вашим браузером.			
+			  </audio>
+			  <small class="text-muted">Baby deer</small>
+			  <audio controls>
+				<source src="audio/voy-oleney.mp3" type="audio/mpeg">
+				Тег audio не поддерживается вашим браузером. 			
+			  </audio>
+			  <small class="text-muted">Howling deers</small>
+			</div>
+		</div>
+		<div class="card__back">
+			<img class="card-img-top" src="pictures/Deer.jpg" alt="Card image cap">
+			<div class="card-body">
+			  <h5 class="card-title"><br>Благородный олень</h5>
+			  <p class="card-text">
+				  Благородный олень или настоящий олень — парнокопытное млекопитающее из семейства оленевых. Благородный олень обитает в большей части Европы, на Кавказе, в Малой Азии, Иране, в некоторых частях Западной и Центральной Азии.
+				<br>
+				  Благородный олень объединяет в себе до 28 подвидов, представители которых отличаются друг от друга размерами, весом, окраской и некоторыми другими признаками. Кавказский олень, европейский олень, марал, крымский олень, бухарский или тугайный олень, вапити, изюбрь — все они являются подвидами этого животного. Это можно легко определить по таким параметрам, как шерсть животного, которая в летний период не имеет пятнистого окраса, а белое пятно под хвостом большое и поднимается выше начала хвоста. Благородный олень имеет рога с большим количеством отростков (как правило, их не менее пяти), которые образуют своеобразную узнаваемую крону на вершине рога.
+				<br><br>
+			  </p>
+			</div>
+			<div class="card-footer">
+			  <audio controls>
+				<source src="audio/deer.mp3" type="audio/mpeg">
+				Тег audio не поддерживается вашим браузером. 			
+			  </audio>
+			  <small class="text-muted">Олень</small>
+			  <audio controls>
+				<source src="audio/olenenok.mp3" type="audio/mpeg">
+				Тег audio не поддерживается вашим браузером.			
+			  </audio>
+			  <small class="text-muted">Оленёнок</small>
+			  <audio controls>
+				<source src="audio/voy-oleney.mp3" type="audio/mpeg">
+				Тег audio не поддерживается вашим браузером. 			
+			  </audio>
+			  <small class="text-muted">Олени</small>
+			</div>
+		</div>
+	  </div>
+	  
+	  <div class="card effect__click">
+		<div class="card__front">
+			<img class="card-img-top" src="pictures/Tiger.jpg" alt="Card image cap">
+			<div class="card-body">
+			  <h5 class="card-title">Valiant tiger</h5>
+			  <p class="card-text">
+				  Tiger is a species of predatory mammals of the feline family, one of the five representatives of the genus panther, which belongs to the subfamily of big cats. In the XX century, it was listed in the IUCN Red Book, in the Red Book of Russia, as well as in the protection documents of other countries. 
+				<br>
+				  Among the representatives of this species there are the largest animals of the feline family. The tiger is one of the largest terrestrial predators, second in mass only to the white and brown bears. Nine subspecies of the tiger have been identified, of which only six have survived by the beginning of the XXI century. The total number is about 4000-6500 individuals, of which the Bengal tiger is the most numerous, accounting for 40% of the total population, which inhabits India, Nepal, Bhutan, Bangladesh.
+			  </p>
+			</div>
+			<div class="card-footer">
+			  <audio controls>
+				<source src="audio/tiger.mp3" type="audio/mpeg">
+				Тег audio не поддерживается вашим браузером. 			
+			  </audio>
+			  <small class="text-muted">Tiger</small>
+			  <audio controls>
+				<source src="audio/tigrenok.mp3" type="audio/mpeg">
+				Тег audio не поддерживается вашим браузером.			
+			  </audio>
+			  <small class="text-muted">Baby tiger</small>
+			</div>
+		</div>
+		<div class="card__back">
+			<img class="card-img-top" src="pictures/Tiger.jpg" alt="Card image cap">
+			<div class="card-body">
+			  <h5 class="card-title">Тигр</h5>
+			  <p class="card-text">
+				  Тигр — вид хищных млекопитающих семейства кошачьих, один из пяти представителей рода пантера, который относится к подсемейству больших кошек. В XX веке внесён в Красную книгу МСОП, в Красную книгу России, а также в охранные документы других стран. 
+				<br>
+				  Среди представителей этого вида встречаются крупнейшие животные семейства кошачьих. Тигр является одним из крупнейших наземных хищников, уступая по массе лишь белому и бурому медведям. Выделено девять подвидов тигра, из которых к началу XXI века сохранились лишь шесть. Общая численность составляет порядка 4000 &ndash; 6500 особей, из них самым многочисленным является бенгальский тигр, составляющий 40 % от всей популяции, который населяет Индию, Непал, Бутан, Бангладеш.
+			  </p>
+			</div>
+			<div class="card-footer">
+			  <audio controls>
+				<source src="audio/tiger.mp3" type="audio/mpeg">
+				Тег audio не поддерживается вашим браузером. 			
+			  </audio>
+			  <small class="text-muted">Тигр</small>
+			  <audio controls>
+				<source src="audio/tigrenok.mp3" type="audio/mpeg">
+				Тег audio не поддерживается вашим браузером.			
+			  </audio>
+			  <small class="text-muted">Тигрёнок</small>
+			</div>
+		</div>
+	  </div>	  
+	  </div> 
+	  	
+		<script>
+
+			(function() {
+			  var cards = document.querySelectorAll(".card.effect__click");
+			  for ( var i  = 0, len = cards.length; i < len; i++ ) {
+				var card = cards[i];
+				clickListener( card );
+			  }
+			 
+			  function clickListener(card) {
+				card.addEventListener( "click", function() {
+				  var c = this.classList;
+				  c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
+				});
+			  }
+			})();
+			
+		</script>
+		
+	  </div>
+	  <div class="tab-pane fade" id="birds" role="tabpanel" aria-labelledby="birds-tab">
+
+		  <svg id="gallery">
+		  <defs>
+			<clipPath id="cp-roundcorners">
+			  <rect width="100%" height="100%" fill="gold" fill-opacity=".5"
+				rx="80" ry="100"/>
+			</clipPath>
+			<symbol id="s-wavy-path">
+			  <g transform="translate(-50,60)">
+				<path d="M903,4.5 C903,4.5 854,42.5341344 803.148089,42.2925317 C753.981141,42.0589344 753.709827,1.76742786 703.354914,2.13371392 C653,2.49999998 652.817934,41.4339085 602.908967,41.9840226 C553,42.5341367 552.597027,1.1857595 503.173513,1.84287976 C453.75,2.50000002 452.074424,40.9050063 403.037212,41.7195701 C354,42.5341339 350.880655,2.72739994 302.940328,2.61369997 C255,2.5 253.131621,42.5536648 203.06581,42.5341357 C153,42.5146065 154,2.5 103.175781,2.5 C52.3515625,2.5 3,42.5341344 3,42.5341344"></path>
+			  </g>
+			</symbol>
+			
+			<symbol id="s-wavy-path-vert">
+			  <use xlink:href="#s-wavy-path" transform=" translate(130,-30) rotate(90)"/>
+			</symbol>
+			
+			<mask id="m-wavy-lines">
+			  <use xlink:href="#s-wavy-path" y="-100" class="u-line"/>
+			  <use xlink:href="#s-wavy-path" y="-50" class="u-line"/>
+			  <use xlink:href="#s-wavy-path" class="u-line"/>
+			  <use xlink:href="#s-wavy-path" y="50" class="u-line"/>
+			  <use xlink:href="#s-wavy-path" y="100" class="u-line"/>
+			  <use xlink:href="#s-wavy-path" y="150" class="u-line"/>
+			  <use xlink:href="#s-wavy-path" y="200" class="u-line"/>
+			  <use xlink:href="#s-wavy-path" y="250" class="u-line"/>
+			  <use xlink:href="#s-wavy-path" y="300" class="u-line"/>
+			  <use xlink:href="#s-wavy-path" y="350" class="u-line"/>
+			  <use xlink:href="#s-wavy-path" y="400" class="u-line"/>
+			  <use xlink:href="#s-wavy-path" y="450" class="u-line"/>
+			</mask>
+			
+			<mask id="m-wavy-lines-vertical">
+			  <use xlink:href="#s-wavy-path-vert" x="-50" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="50" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="100" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="150" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="200" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="250" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="300" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="350" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="400" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="450" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="500" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="550" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="600" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="650" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="700" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="750" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="800" class="u-line"/>
+			  <use xlink:href="#s-wavy-path-vert" x="850" class="u-line"/>
+			</mask>
+			
+			<symbol id="s-path">
+			  <path d="M0,0 0,800" transform="translate(25,0)"/>
+			</symbol>
+			
+			<mask id="m-lines">
+			  <use xlink:href="#s-path" class="u-line"/>
+			  <use xlink:href="#s-path" x="50" class="u-line"/>
+			  <use xlink:href="#s-path" x="100" class="u-line"/>
+			  <use xlink:href="#s-path" x="150" class="u-line"/>
+			  <use xlink:href="#s-path" x="200" class="u-line"/>
+			  <use xlink:href="#s-path" x="250" class="u-line"/>
+			  <use xlink:href="#s-path" x="300" class="u-line"/>
+			  <use xlink:href="#s-path" x="350" class="u-line"/>
+			  <use xlink:href="#s-path" x="400" class="u-line"/>
+			  <use xlink:href="#s-path" x="450" class="u-line"/>
+			  <use xlink:href="#s-path" x="500" class="u-line"/>
+			  <use xlink:href="#s-path" x="550" class="u-line"/>
+			  <use xlink:href="#s-path" x="600" class="u-line"/>
+			  <use xlink:href="#s-path" x="650" class="u-line"/>
+			  <use xlink:href="#s-path" x="700" class="u-line"/>
+			  <use xlink:href="#s-path" x="750" class="u-line"/>
+			  <use xlink:href="#s-path" x="800" class="u-line"/>
+			</mask>
+			
+			<mask id="m-circles">
+			  <circle r="5" cx="0" cy="530" class="u-line"/>
+			  <circle r="50" cx="0" cy="530" class="u-line"/>
+			  <circle r="100" cx="0" cy="530" class="u-line"/>
+			  <circle r="150" cx="0" cy="530" class="u-line"/>
+			  <circle r="200" cx="0" cy="530" class="u-line"/>
+			  <circle r="250" cx="0" cy="530" class="u-line"/>
+			  <circle r="300" cx="0" cy="530" class="u-line"/>
+			  <circle r="350" cx="0" cy="530" class="u-line"/>
+			  <circle r="400" cx="0" cy="530" class="u-line"/>
+			  <circle r="450" cx="0" cy="530" class="u-line"/>
+			  <circle r="500" cx="0" cy="530" class="u-line"/>
+			  <circle r="550" cx="0" cy="530" class="u-line"/>
+			  <circle r="600" cx="0" cy="530" class="u-line"/>
+			  <circle r="650" cx="0" cy="530" class="u-line"/>
+			  <circle r="700" cx="0" cy="530" class="u-line"/>
+			  <circle r="750" cx="0" cy="530" class="u-line"/>
+			  <circle r="800" cx="0" cy="530" class="u-line"/>
+			  <circle r="850" cx="0" cy="530" class="u-line"/>
+			  <circle r="900" cx="0" cy="530" class="u-line"/>
+			  <circle r="950" cx="0" cy="530" class="u-line"/>
+			  <circle r="1000" cx="0" cy="530" class="u-line"/>
+			</mask>
+			
+			<filter id="fl-shadow" filterUnits="userSpaceOnUse" x="0" y="0"
+					  width="800" height="500">
+				<feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+				<feOffset in="blur" dx="0" dy="0" result="offsetBlr" />
+				<feFlood flood-color="rgba(0,0,0,.9)"/>
+				<feComposite operator="in" in2="offsetBlr" result="colBlur"/>
+				<feMerge>
+				  <feMergeNode in="colBlur"/>
+				  <feMergeNode in="SourceGraphic"/>
+				</feMerge>
+			  </filter>
+		  </defs>
+		
+		  <text y="260" x="400" text-anchor="middle" id="title"></text>
+		  <g class="g-images" clip-path="url(#cp-roundcorners)">
+			
+			<image xlink:href="pictures/Zimorodok.jpg" width="100%" height="100%" class="image im-mask-waves-2"/>
+			
+			<image xlink:href="pictures/Sojka.png" width="100%" height="100%" class="image im-mask-waves-1"/>
+					
+			<image xlink:href="pictures/Swan.png" width="100%" height="100%" class="image im-mask-circles"/>
+			
+			<image xlink:href="pictures/Egret.png" width="100%" height="100%" class="image im-mask-lines"/>
+			
+		  </g>
+		  
+		</svg>
+	
+	
+		<svg id="gallery">
+		  
+		  <text y="260" x="400" text-anchor="middle" id="title"></text>
+		  <g class="g-images">
+			
+			<text y="260" x="400" text-anchor="middle" id="title" class="image im-mask-waves-1">&nbsp;&nbsp; Зимородок &ndash; Kingfisher</text>
+			
+			<text y="260" x="400" text-anchor="middle" id="title" class="image im-mask-circles">Сойка &ndash; Blue jay</text>
+			
+			<text y="260" x="400" text-anchor="middle" id="title" class="image im-mask-waves-2">Лебедь &ndash; Swan</text>
+			
+			<text y="260" x="400" text-anchor="middle" id="title" class="image im-mask-waves-2"> &nbsp; Цапля &ndash; Egret</text>
+			
+		  </g>
+		  
+		</svg>
+	  
+	  
+	  </div>
+	  <div class="tab-pane fade" id="flora" role="tabpanel" aria-labelledby="flora-tab">
+	  
+		<img id="landscape" src="pictures/Zapovednik.png">
+		<img src="pictures/Trees.png">
+		
+		<table id="print-text">
+			<tr>
+				<td> </td>
+				<td><br><pre>   Кедр</pre></td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td colspan="2"><pre><br>       Ель</pre></td>
+				<td colspan="2"><pre> Декоративная <br> яблоня      Дуб</pre></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td colspan="2" class="otstup-left"><br><pre>Берёза</pre></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td> <pre>Клён</pre> </td>
+				<td></td>
+				<td></td>
+				<td> <pre>Сосна</pre> </td>
+				<td colspan="2" class="otstup-left"><pre><br>Акация</pre></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+	  
+	  </div>
+	  
+	</div>
+	
+
+	<script>
+	
+		function printText(el){
+
+			var letterTimeout = 30;
+
+			var text = el.innerHTML;
+			var i = 1;
+
+			var print_symbol = function(){
+
+					if (i <= text.length) {
+						el.innerHTML = text.substr( 0, i );
+						setTimeout( arguments.callee, letterTimeout );
+					};
+
+					i++;
+				};
+
+			print_symbol();
+		};
+
+		var el = document.getElementById('print-text');
+		printText(el);
+		
+	</script>
+
+	
+	<footer>
+		<svg width="100%" id="about" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><defs><linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="5%" stop-color="#abb8c388"></stop><stop offset="95%" stop-color="#7bdcb588"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,200 0,200 C 72.29665071770336,180.14354066985646 144.59330143540672,160.2870813397129 251,151 C 357.4066985645933,141.7129186602871 497.92344497607644,142.99521531100478 591,152 C 684.0765550239236,161.00478468899522 729.7129186602872,177.73205741626793 812,190 C 894.2870813397128,202.26794258373207 1013.2248803827752,210.07655502392342 1124,211 C 1234.7751196172248,211.92344497607658 1337.3875598086124,205.96172248803828 1440,200 C 1440,200 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><defs><linearGradient id="gradient" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="5%" stop-color="#abb8c3ff"></stop><stop offset="95%" stop-color="#7bdcb5ff"></stop></linearGradient></defs><path d="M 0,600 C 0,600 0,400 0,400 C 64.58373205741626,413.9043062200957 129.1674641148325,427.80861244019144 237,410 C 344.8325358851675,392.19138755980856 495.91387559808607,342.6698564593301 620,354 C 744.0861244019139,365.3301435406699 841.177033492823,437.5119617224881 913,439 C 984.822966507177,440.4880382775119 1031.377990430622,371.28229665071774 1115,353 C 1198.622009569378,334.71770334928226 1319.311004784689,367.35885167464113 1440,400 C 1440,400 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="url(#gradient)" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
+	
+		<ul>
+	
+			<li class="text-muted"><em>&copy; 2022 Copyright Text</em></li>
+			<li><a class="text-muted" href="http://github.com/espoira" target="blank">
+					<h4><div id="hares"><img src="pictures/hare_1.png" id="hare-1"><img src="pictures/hare_2.png" id="hare-2"></div> More sites here<img src="pictures/hare.png" id="hare-3"></h4>
+				</a>
+			</li>
+
+		</ul>
+	</footer>
+      
+</body>
+
+</html>
