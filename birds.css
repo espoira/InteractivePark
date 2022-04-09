@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
-
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 h1 {
   font-family: 'Arima Madurai', cursive;
   color: black;
@@ -69,7 +71,7 @@ h1 {
 @media (max-width: 864px) {
 	@keyframes fly-cycle {
 	  100% {
-		background-position: -800px 0;
+		background-position: -820px 0;
 	  }
 	}
 }

@@ -38,7 +38,7 @@ html{
 	.card__back {
 		width: 100%;
 		position: relative;
-		margin-top: 0px;
+		top: -1612px;
 	}
 }
 		
