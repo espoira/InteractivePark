@@ -34,6 +34,11 @@ html{
 	top:-22px;
 	left:22px;
 }
+@media (max-width: 1162px) {
+	.card__back {
+		width: 100%;
+	}
+}
 		
 .card__front,
 .card__back {
@@ -62,12 +67,18 @@ html{
 @keyframes rotation-bird {
 	0% {
 		-webkit-transform: rotateZ(-35deg); 
+		-moz-transform: rotateZ(-35deg); 
+		-o-transform: rotateZ(-35deg);
 	}
 	70% {
 		-webkit-transform: rotateZ(70deg);
+		-moz-transform: rotateZ(70deg);
+		-o-transform: rotateZ(70deg);
 	}
 	100% {
 		-webkit-transform: rotateZ(-35deg);
+		-moz-transform: rotateZ(-35deg);
+		-o-transform: rotateZ(-35deg);
 	}
 }
 		
