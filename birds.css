@@ -68,13 +68,6 @@ h1 {
     background-position: -900px 0;
   }
 }
-@media (max-width: 864px) {
-	@keyframes fly-cycle {
-	  100% {
-		background-position: -10vw 0;
-	  }
-	}
-}
 @keyframes flying-bird {
   0% {
     transform: scale(0.3) translateX(-100vw);  
