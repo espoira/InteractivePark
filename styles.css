@@ -37,6 +37,7 @@ html{
 @media (max-width: 1162px) {
 	.card__back {
 		width: 100%;
+		position: absolute;
 	}
 }
 		
@@ -100,30 +101,46 @@ html{
 }		
 @keyframes show-hare {
 	0% {
-		opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-o-opacity: 0;
 	}
 	25% {
-		opacity: 1;
+		-webkit-opacity: 1;
+		-moz-opacity: 1;
+		-o-opacity: 1;
 	}
 	55% {
-		opacity: 1;
+		-webkit-opacity: 1;
+		-moz-opacity: 1;
+		-o-opacity: 1;
 	}
 	100% {
-		opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-o-opacity: 0;
 	}
 }
 @keyframes hide-hare {
 	0% {
-		opacity: 1;
+		-webkit-opacity: 1;
+		-moz-opacity: 1;
+		-o-opacity: 1;
 	}
 	10% {
-		opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-o-opacity: 0;
 	}
 	50% {
-		opacity: 0;
+		-webkit-opacity: 0;
+		-moz-opacity: 0;
+		-o-opacity: 0;
 	}
 	100% {
-		opacity: 1;
+		-webkit-opacity: 1;
+		-moz-opacity: 1;
+		-o-opacity: 1;
 	}
 }
 #hare-3{
