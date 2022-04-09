@@ -37,7 +37,8 @@ html{
 @media (max-width: 1162px) {
 	.card__back {
 		width: 100%;
-		position: absolute;
+		position: relative;
+		margin-top: 0px;
 	}
 }
 		
