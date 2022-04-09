@@ -92,7 +92,34 @@ h1 {
     transform: translateY(0vh) translateX(105.5vw) scale(0.6);
   }
 }
-	
+@media (max-width: 864px) {	
+	@keyframes flying-bird {
+	  0% {
+		transform: scale(0.3) translateX(-90vw);  
+	  }
+	  40% {
+		transform: scale(0.3) translateX(-15vw);
+	  }
+	  50% {
+		transform: scale(0.3) translateX(5vw);
+	  }
+	  60% {
+		transform: translateY(2vh) translateX(25vw) scale(0.4);
+	  }
+	  70% {
+		transform: translateY(0vh) translateX(45vw) scale(0.5);
+	  }
+	  80% {
+		transform: translateY(4vh) translateX(65vw) scale(0.6);
+	  }
+	  90% {
+		transform: translateY(2vh) translateX(85vw) scale(0.6);
+	  }
+	  100% {
+		transform: translateY(0vh) translateX(100vw) scale(0.6);
+	  }
+	}
+}
 		
 #right {
 	animation: 1.2s flying-start linear;
