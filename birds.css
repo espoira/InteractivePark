@@ -71,7 +71,7 @@ h1 {
 @media (max-width: 864px) {
 	@keyframes fly-cycle {
 	  100% {
-		background-position: -820px 0;
+		background-position: -10vw 0;
 	  }
 	}
 }
