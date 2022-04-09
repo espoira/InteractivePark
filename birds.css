@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Arima+Madurai:300');
-*, *::before, *::after {
-  box-sizing: border-box;
-}
+
 h1 {
   font-family: 'Arima Madurai', cursive;
   color: black;
